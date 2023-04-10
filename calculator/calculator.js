@@ -24,7 +24,7 @@ app.post("/",function(req,res){
 	console.log(req.body.num1);*/
 
 	let num1 = Number(req.body.num1);
-	let num2 = Number(req.body.num2);  
+	let num2 f= Number(req.body.num2);  
 	let result = num1+num2;
 	res.send("Your result is " + result);
 
