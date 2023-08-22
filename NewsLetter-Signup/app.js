@@ -44,7 +44,7 @@ app.post("/",function(req,res){
 
 	const options = {
 		method : "POST",
-		auth : "kyawsan1:e820e56a3ff2d6f39ce061433b1ef2a8-us13",
+		auth : "kyawsan1:f6e2d8fc73d61e6c4f9a9a54b91b085d-us13",
 	}
 
 	const request = https.request(url,options,function(response){
@@ -76,7 +76,7 @@ app.listen(3000,function(){
 });
 
 // mailchimp API Key
-// e820e56a3ff2d6f39ce061433b1ef2a8-us13
+// f6e2d8fc73d61e6c4f9a9a54b91b085d-us13
 
 // list id or audience id
 // 700d2a6bb2

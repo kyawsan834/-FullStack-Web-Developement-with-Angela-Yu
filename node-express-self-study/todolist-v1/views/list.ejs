@@ -1,0 +1,33 @@
+<%- include("header.ejs") -%>
+
+	<div class="box">
+		<h1 id="heading" class="heading">
+			<%= kindOfDay %>
+		</h1>
+	</div>
+
+	<div class="box">
+		<!-- <li>Photoshop</li> -->
+		<!-- <li>Remove Text && Edit Text to Center</li> -->
+
+		<% for(let i=0; i<listitem.length; i++){ %>
+			<div class="item">
+				<input type="checkbox" name="" id="" class="">
+				<p class="">
+					<%= listitem[i] %>
+				</p>
+			</div>
+			<% } %>
+
+				<form action="/" method="POST" class="item">
+
+					<input type="text" name="listitem" placeholder="Enter your task" required autocomplete="off"
+						autofocus>
+					<button type="submit" name="button" value=<%=kindOfDay%>>+</button>
+
+				</form>
+
+
+	</div>
+
+	<%- include("footer.ejs") -%>

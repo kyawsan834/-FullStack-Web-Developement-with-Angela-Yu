@@ -1,0 +1,55 @@
+<%- include("header") -%>
+
+	<!-- <%if(listtitle === "Saturday" || listtitle === "Sunday"){ %>
+		<h1 style="color:purple";>Today is a <%= listtitle  %> To Do List </h1>
+	<%}else{%>
+
+		<h1 style="color: blue;">Today is a <%= listtitle  %> To Do List </h1> 
+	<%}%> -->
+
+
+	<div id="heading" class="box">
+		<h1>
+			<%= listtitle %>
+		</h1>
+	</div>
+
+	<div class="box">
+
+
+		<div>
+			<div class="item">
+				<input type="checkbox">
+				<p>remove text</p>
+			</div>
+			<div class="item">
+				<input type="checkbox">
+				<p>text center</p>
+			</div>
+		</div>
+
+
+		<% for(let i=0; i<listitem.length; i++){ %>
+			<div class="item">
+
+				<input type="checkbox">
+
+				<p>
+					<%= listitem[i] %>
+				</p>
+			</div>
+			<% } %>
+
+				<form action="/" class="item" method="POST">
+					<input type="text" name="newItem" id="" class="" autofocus autocomplete="off"
+						placeholder="New Item" />
+					<button type="submit" name="list" value=<%=listtitle %>>+</button>
+				</form>
+
+	</div>
+
+	<div class="box">
+
+	</div>
+
+	<%- include("footer") -%>
